@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pattie's Jewellery - Exquisite Handcrafted Jewelry in Nairobi</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .jewelry-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .opening-hours li {
+            transition: all 0.3s ease;
+        }
+        
+        .opening-hours li:hover {
+            background-color: rgba(245, 230, 200, 0.5);
+        }
+        
+        .current-day {
+            background-color: rgba(245, 230, 200, 0.8);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-amber-50">
+<!-- Navigation -->
+<nav class="bg-amber-900 text-white shadow-lg">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<i class="fas fa-gem text-2xl text-amber-200"></i>
+<span class="text-xl font-bold">Pattie's Jewellery</span>
+</div>
+<div class="hidden md:flex space-x-6">
+<a class="hover:text-amber-200 transition" href="#home">Home</a>
+<a class="hover:text-amber-200 transition" href="#about">About</a>
+<a class="hover:text-amber-200 transition" href="#products">Collections</a>
+<a class="hover:text-amber-200 transition" href="#contact">Contact</a>
+</div>
+<div class="md:hidden">
+<button class="text-white focus:outline-none" id="menu-btn">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile menu -->
+<div class="hidden md:hidden bg-amber-800 px-4 pb-4" id="mobile-menu">
+<a class="block py-2 hover:text-amber-200 transition" href="#home">Home</a>
+<a class="block py-2 hover:text-amber-200 transition" href="#about">About</a>
+<a class="block py-2 hover:text-amber-200 transition" href="#products">Collections</a>
+<a class="block py-2 hover:text-amber-200 transition" href="#contact">Contact</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-bg text-white py-20 md:py-32" id="home">
+<div class="container mx-auto px-4 text-center">
+<h1 class="text-4xl md:text-6xl font-bold mb-6">Exquisite Handcrafted Jewelry</h1>
+<p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Discover our unique collection of fine jewelry, handcrafted with passion in the heart of Nairobi.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-full transition duration-300" href="#products">View Collections</a>
+<a class="bg-transparent hover:bg-amber-800 text-white font-bold py-3 px-6 border-2 border-white rounded-full transition duration-300" href="#contact">Visit Us</a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-white" id="about">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">Our Story</h2>
+<div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="md:w-1/2">
+<img alt="Pattie's Jewellery Store" class="rounded-lg shadow-xl w-full h-auto" src="https://lh3.googleusercontent.com/p/AF1QipM6zl7FVI43ACNYd_h4hTtKb6QZUj4HekDSZh1P=w408-h408-k-no"/>
+</div>
+<div class="md:w-1/2">
+<h3 class="text-2xl font-semibold text-amber-800 mb-4">Pattie's Jewellery - Since 1985</h3>
+<p class="text-gray-700 mb-4">Located in the vibrant Queensway House on Kaunda Street in Nairobi Central, Pattie's Jewellery has been crafting exquisite jewelry pieces for over three decades.</p>
+<p class="text-gray-700 mb-6">We specialize in both retail and manufacturing, offering a wide range of jewelry from classic designs to contemporary pieces. Each item is crafted with meticulous attention to detail and quality.</p>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="flex items-center">
+<i class="fas fa-check-circle text-amber-600 mr-2"></i>
+<span>Handmade Jewelry</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle text-amber-600 mr-2"></i>
+<span>Free Wi-Fi</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle text-amber-600 mr-2"></i>
+<span>Multiple Payment Options</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-check-circle text-amber-600 mr-2"></i>
+<span>In-store Pickup</span>
+</div>
+</div>
+<a class="inline-block bg-amber-700 hover:bg-amber-800 text-white font-medium py-2 px-6 rounded transition duration-300" href="#contact">Visit Our Store</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Section -->
+<section class="py-16 bg-amber-50" id="products">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">Our Collections</h2>
+<div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="jewelry-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+<img alt="Elegant Necklace" class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-amber-800 mb-2">Elegant Necklace Collection</h3>
+<p class="text-gray-600 mb-4">Handcrafted with premium materials, perfect for special occasions.</p>
+<div class="flex justify-between items-center">
+<span class="font-bold text-amber-700">From KES 15,000</span>
+<button class="text-amber-700 hover:text-amber-900 transition">
+<i class="fas fa-shopping-bag"></i> View
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="jewelry-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+<img alt="Classic Rings" class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=687&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-amber-800 mb-2">Classic Ring Collection</h3>
+<p class="text-gray-600 mb-4">Timeless designs that complement every style and personality.</p>
+<div class="flex justify-between items-center">
+<span class="font-bold text-amber-700">From KES 8,000</span>
+<button class="text-amber-700 hover:text-amber-900 transition">
+<i class="fas fa-shopping-bag"></i> View
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="jewelry-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+<img alt="Bracelet Set" class="w-full h-64 object-cover" src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=686&amp;q=80"/>
+<div class="p-6">
+<h3 class="text-xl font-semibold text-amber-800 mb-2">Bracelet Sets</h3>
+<p class="text-gray-600 mb-4">Delicate and stylish, our bracelets add elegance to any outfit.</p>
+<div class="flex justify-between items-center">
+<span class="font-bold text-amber-700">From KES 12,000</span>
+<button class="text-amber-700 hover:text-amber-900 transition">
+<i class="fas fa-shopping-bag"></i> View
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-10">
+<a class="inline-block bg-amber-700 hover:bg-amber-800 text-white font-medium py-3 px-8 rounded-full transition duration-300" href="#">View All Collections</a>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-amber-900 mb-4">What Our Customers Say</h2>
+<div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-amber-50 p-6 rounded-lg shadow">
+<div class="flex items-center mb-4">
+<div class="text-amber-600 text-2xl mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+<p class="text-gray-700 mb-4">"The craftsmanship at Pattie's is exceptional. My engagement ring is absolutely stunning and gets compliments everywhere I go."</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
+<div>
+<h4 class="font-semibold">Sarah M.</h4>
+<p class="text-sm text-gray-600">Nairobi</p>
+</div>
+</div>
+</div>
+<div class="bg-amber-50 p-6 rounded-lg shadow">
+<div class="flex items-center mb-4">
+<div class="text-amber-600 text-2xl mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+<p class="text-gray-700 mb-4">"I've been buying jewelry from Pattie's for years. Their attention to detail and customer service is unmatched in Nairobi."</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
+<div>
+<h4 class="font-semibold">James K.</h4>
+<p class="text-sm text-gray-600">Regular Customer</p>
+</div>
+</div>
+</div>
+<div class="bg-amber-50 p-6 rounded-lg shadow">
+<div class="flex items-center mb-4">
+<div class="text-amber-600 text-2xl mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+</div>
+<p class="text-gray-700 mb-4">"Beautiful handmade pieces at reasonable prices. The staff helped me find the perfect gift for my wife's anniversary."</p>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
+<div>
+<h4 class="font-semibold">David W.</h4>
+<p class="text-sm text-gray-600">First-time Customer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-amber-900 text-white" id="contact">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Visit Us</h2>
+<div class="w-24 h-1 bg-amber-200 mx-auto"></div>
+</div>
+<div class="flex flex-col lg:flex-row gap-8">
+<div class="lg:w-1/2">
+<div class="bg-amber-800 p-6 rounded-lg shadow-lg mb-8">
+<h3 class="text-xl font-semibold mb-4">Store Information</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<i class="fas fa-map-marker-alt mt-1 mr-3 text-amber-200"></i>
+<div>
+<h4 class="font-medium">Address</h4>
+<p>Queensway House, 2nd Floor, Kaunda St, Nairobi, Kenya</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-phone-alt mt-1 mr-3 text-amber-200"></i>
+<div>
+<h4 class="font-medium">Phone</h4>
+<p>+254 733 265201</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-envelope mt-1 mr-3 text-amber-200"></i>
+<div>
+<h4 class="font-medium">Email</h4>
+<p>info@pattiesjewellery.co.ke</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-amber-800 p-6 rounded-lg shadow-lg">
+<h3 class="text-xl font-semibold mb-4">Opening Hours</h3>
+<ul class="opening-hours space-y-2">
+<li class="flex justify-between p-2 rounded">
+<span>Monday</span>
+<span>9 AM - 5 PM</span>
+</li>
+<li class="flex justify-between p-2 rounded">
+<span>Tuesday</span>
+<span>9 AM - 5 PM</span>
+</li>
+<li class="flex justify-between p-2 rounded">
+<span>Wednesday</span>
+<span>9 AM - 5 PM</span>
+</li>
+<li class="flex justify-between p-2 rounded">
+<span>Thursday</span>
+<span>9 AM - 5 PM</span>
+</li>
+<li class="flex justify-between p-2 rounded">
+<span>Friday</span>
+<span>9 AM - 5 PM</span>
+</li>
+<li class="flex justify-between p-2 rounded">
+<span>Saturday</span>
+<span>9 AM - 3 PM</span>
+</li>
+<li class="flex justify-between p-2 rounded">
+<span>Sunday</span>
+<span>Closed</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="lg:w-1/2">
+<div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg h-full">
+<h3 class="text-xl font-semibold mb-4">Get Directions</h3>
+<div class="aspect-w-16 aspect-h-9 mb-4">
+<iframe allowfullscreen="" class="w-full h-64 md:h-80 border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8081261905!2d36.82346!3d-1.2825789999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f119be86714cf%3A0xfe4af1667138df6f!2sPattie's%20Jewellery!5e0!3m2!1sen!2ske!4v1689876543210!5m2!1sen!2ske">
+</iframe>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center">
+<i class="fas fa-wifi text-amber-700 mr-2"></i>
+<span>Free Wi-Fi</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-credit-card text-amber-700 mr-2"></i>
+<span>Multiple Payment Options</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-store text-amber-700 mr-2"></i>
+<span>In-store Pickup</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-truck text-amber-700 mr-2"></i>
+<span>Delivery Available</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-amber-950 text-white py-8">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<div class="flex items-center space-x-2">
+<i class="fas fa-gem text-2xl text-amber-200"></i>
+<span class="text-xl font-bold">Pattie's Jewellery</span>
+</div>
+<p class="text-sm text-amber-200 mt-2">Exquisite Handcrafted Jewelry Since 1985</p>
+</div>
+<div class="flex space-x-4">
+<a class="text-amber-200 hover:text-white transition" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="text-amber-200 hover:text-white transition" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="text-amber-200 hover:text-white transition" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="text-amber-200 hover:text-white transition" href="#">
+<i class="fab fa-pinterest"></i>
+</a>
+</div>
+</div>
+<div class="border-t border-amber-800 mt-6 pt-6 text-sm text-center text-amber-300">
+<p>© 2023 Pattie's Jewellery. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Highlight current day in opening hours
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const today = new Date().getDay();
+        const currentDay = days[today];
+        
+        const openingHoursItems = document.querySelectorAll('.opening-hours li');
+        openingHoursItems.forEach(item => {
+            if (item.textContent.includes(currentDay)) {
+                item.classList.add('current-day');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
