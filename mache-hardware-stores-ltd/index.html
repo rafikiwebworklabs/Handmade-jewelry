@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mache Hardware Stores Ltd - Nakuru's Premier Hardware Store</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+        }
+        .opening-hours:hover .hours-details {
+            display: block;
+        }
+        .map-container {
+            height: 300px;
+        }
+        @media (min-width: 768px) {
+            .map-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+<!-- Header -->
+<header class="bg-white shadow-sm">
+<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<i class="fas fa-tools text-blue-600 text-2xl"></i>
+<h1 class="text-xl font-bold text-gray-800">Mache Hardware</h1>
+</div>
+<nav class="hidden md:flex space-x-6">
+<a class="text-gray-600 hover:text-blue-600" href="#">Home</a>
+<a class="text-gray-600 hover:text-blue-600" href="#">Products</a>
+<a class="text-gray-600 hover:text-blue-600" href="#">Services</a>
+<a class="text-gray-600 hover:text-blue-600" href="#">About</a>
+<a class="text-gray-600 hover:text-blue-600" href="#">Contact</a>
+</nav>
+<button class="md:hidden text-gray-600">
+<i class="fas fa-bars text-xl"></i>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-gradient py-12">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-8 md:mb-0">
+<h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Mache Hardware Stores Ltd</h1>
+<p class="text-lg text-gray-600 mb-6">Your one-stop shop for all hardware needs in Nakuru, Kenya</p>
+<div class="flex items-center mb-4">
+<div class="flex text-yellow-400 mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<span class="text-gray-700">4.2 (246 reviews)</span>
+</div>
+<div class="flex flex-wrap gap-3 mb-6">
+<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Hardware Store</span>
+<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Quick Visit</span>
+<span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Same-day Delivery</span>
+</div>
+<div class="flex space-x-4">
+<a class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300" href="#directions">
+<i class="fas fa-map-marker-alt mr-2"></i> Get Directions
+                        </a>
+<a class="bg-white hover:bg-gray-100 text-gray-800 px-6 py-3 rounded-lg font-medium border border-gray-300 transition duration-300" href="tel:+254700483315">
+<i class="fas fa-phone-alt mr-2"></i> Call Now
+                        </a>
+</div>
+</div>
+<div class="md:w-1/2">
+<img alt="Mache Hardware Store" class="rounded-lg shadow-lg w-full h-auto object-cover" src="https://lh3.googleusercontent.com/p/AF1QipNF9qz603ytGbyqh_TBhAzOGCgfcpYNRkc-W-7G=w426-h240-k-no"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content -->
+<main class="container mx-auto px-4 py-12">
+<div class="flex flex-col lg:flex-row gap-8">
+<!-- Left Column -->
+<div class="lg:w-2/3">
+<!-- About Section -->
+<section class="bg-white rounded-lg shadow-sm p-6 mb-8">
+<h2 class="text-2xl font-bold text-gray-800 mb-4">About Mache Hardware Stores</h2>
+<p class="text-gray-600 mb-4">
+                        Mache Hardware Stores Ltd is a premier hardware store located in the heart of Nakuru, Kenya. 
+                        We've been serving the community with quality hardware products and exceptional service for years.
+                    </p>
+<p class="text-gray-600">
+                        Our store offers a wide range of hardware products to meet all your construction, renovation, 
+                        and home improvement needs. From tools to building materials, we've got you covered.
+                    </p>
+</section>
+<!-- Services Section -->
+<section class="bg-white rounded-lg shadow-sm p-6 mb-8">
+<h2 class="text-2xl font-bold text-gray-800 mb-4">Our Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-blue-50 p-4 rounded-lg">
+<i class="fas fa-truck text-blue-600 text-2xl mb-2"></i>
+<h3 class="font-semibold text-gray-800 mb-1">Same-Day Delivery</h3>
+<p class="text-gray-600 text-sm">Get your orders delivered on the same day within Nakuru</p>
+</div>
+<div class="bg-green-50 p-4 rounded-lg">
+<i class="fas fa-store text-green-600 text-2xl mb-2"></i>
+<h3 class="font-semibold text-gray-800 mb-1">In-Store Pickup</h3>
+<p class="text-gray-600 text-sm">Order online and pick up at your convenience</p>
+</div>
+<div class="bg-purple-50 p-4 rounded-lg">
+<i class="fas fa-headset text-purple-600 text-2xl mb-2"></i>
+<h3 class="font-semibold text-gray-800 mb-1">Expert Advice</h3>
+<p class="text-gray-600 text-sm">Our knowledgeable staff is ready to assist you</p>
+</div>
+<div class="bg-yellow-50 p-4 rounded-lg">
+<i class="fas fa-boxes text-yellow-600 text-2xl mb-2"></i>
+<h3 class="font-semibold text-gray-800 mb-1">Wide Selection</h3>
+<p class="text-gray-600 text-sm">Comprehensive range of quality hardware products</p>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="bg-white rounded-lg shadow-sm p-6 mb-8">
+<h2 class="text-2xl font-bold text-gray-800 mb-4">Customer Reviews</h2>
+<div class="flex items-center mb-6">
+<div class="flex text-yellow-400 mr-2">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star-half-alt"></i>
+</div>
+<span class="text-gray-700">4.2 stars from 246 reviews</span>
+</div>
+<div class="space-y-6">
+<div class="border-b border-gray-100 pb-6">
+<div class="flex items-center mb-2">
+<div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center mr-3">
+<i class="fas fa-user text-gray-500"></i>
+</div>
+<div>
+<h4 class="font-medium">John K.</h4>
+<div class="flex text-yellow-400 text-sm">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600">"Great selection of hardware items and very helpful staff. Found everything I needed for my home renovation project."</p>
+</div>
+<div class="border-b border-gray-100 pb-6">
+<div class="flex items-center mb-2">
+<div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center mr-3">
+<i class="fas fa-user text-gray-500"></i>
+</div>
+<div>
+<h4 class="font-medium">Sarah W.</h4>
+<div class="flex text-yellow-400 text-sm">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="far fa-star"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-600">"Good prices and quality products. The store is well-organized which makes shopping easy. Would recommend."</p>
+</div>
+</div>
+<button class="mt-6 text-blue-600 font-medium hover:text-blue-800 transition duration-300">
+                        See all 246 reviews <i class="fas fa-chevron-right ml-1"></i>
+</button>
+</section>
+</div>
+<!-- Right Column -->
+<div class="lg:w-1/3">
+<!-- Contact Card -->
+<div class="bg-white rounded-lg shadow-sm p-6 mb-8 sticky top-4">
+<h2 class="text-2xl font-bold text-gray-800 mb-4">Contact Information</h2>
+<div class="space-y-4">
+<div class="flex items-start">
+<i class="fas fa-map-marker-alt text-gray-500 mt-1 mr-3"></i>
+<div>
+<h3 class="font-medium text-gray-800">Address</h3>
+<p class="text-gray-600">Geoffrey Kamau Ave, Nakuru, Kenya</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="fas fa-phone-alt text-gray-500 mt-1 mr-3"></i>
+<div>
+<h3 class="font-medium text-gray-800">Phone</h3>
+<p class="text-gray-600">+254 700 483315</p>
+</div>
+</div>
+<div class="flex items-start opening-hours relative">
+<i class="fas fa-clock text-gray-500 mt-1 mr-3"></i>
+<div>
+<h3 class="font-medium text-gray-800">Opening Hours</h3>
+<p class="text-gray-600 cursor-pointer hover:text-blue-600">
+<span class="font-medium" id="current-day"></span>: 7 AM to 5:30 PM
+                                    <i class="fas fa-chevron-down ml-1 text-xs"></i>
+</p>
+<div class="hours-details absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-lg p-4 z-10 hidden">
+<ul class="space-y-2">
+<li class="flex justify-between"><span>Monday</span><span>7 AM - 5:30 PM</span></li>
+<li class="flex justify-between"><span>Tuesday</span><span>7 AM - 5:30 PM</span></li>
+<li class="flex justify-between"><span>Wednesday</span><span>7 AM - 5:30 PM</span></li>
+<li class="flex justify-between"><span>Thursday</span><span>7 AM - 5:30 PM</span></li>
+<li class="flex justify-between"><span>Friday</span><span>7 AM - 5:30 PM</span></li>
+<li class="flex justify-between"><span>Saturday</span><span>7 AM - 5:30 PM</span></li>
+<li class="flex justify-between text-gray-400"><span>Sunday</span><span>Closed</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="pt-4">
+<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg font-medium transition duration-300 mb-3" href="https://www.google.com/maps/search/?api=1&amp;query=Mache%20Hardware%20Stores%20Ltd&amp;query_place_id=ChIJGeni8JWNKRgRgjXHnKq_RwU" target="_blank">
+<i class="fas fa-directions mr-2"></i> Get Directions
+                            </a>
+<a class="block w-full bg-white hover:bg-gray-100 text-gray-800 text-center py-3 rounded-lg font-medium border border-gray-300 transition duration-300" href="tel:+254700483315">
+<i class="fas fa-phone-alt mr-2"></i> Call Now
+                            </a>
+</div>
+</div>
+</div>
+<!-- Map Section -->
+<div class="bg-white rounded-lg shadow-sm overflow-hidden mb-8" id="directions">
+<div class="p-4 border-b border-gray-100">
+<h3 class="font-bold text-gray-800">Location</h3>
+</div>
+<div class="map-container">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.678480042068!2d36.06805!3d-0.28434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x547bfaa9cc73582!2sMache%20Hardware%20Stores%20Ltd!5e0!3m2!1sen!2ske!4v1680000000000!5m2!1sen!2ske" style="border:0;" width="100%">
+</iframe>
+</div>
+</div>
+<!-- Popular Products -->
+<div class="bg-white rounded-lg shadow-sm p-6">
+<h2 class="text-2xl font-bold text-gray-800 mb-4">Popular Products</h2>
+<div class="space-y-4">
+<div class="flex items-center p-3 hover:bg-gray-50 rounded-lg transition duration-200">
+<div class="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mr-4">
+<i class="fas fa-hammer text-gray-500 text-xl"></i>
+</div>
+<div>
+<h3 class="font-medium text-gray-800">Tools</h3>
+<p class="text-sm text-gray-500">Hammers, screwdrivers, wrenches</p>
+</div>
+</div>
+<div class="flex items-center p-3 hover:bg-gray-50 rounded-lg transition duration-200">
+<div class="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mr-4">
+<i class="fas fa-paint-roller text-gray-500 text-xl"></i>
+</div>
+<div>
+<h3 class="font-medium text-gray-800">Paints</h3>
+<p class="text-sm text-gray-500">Interior, exterior, primers</p>
+</div>
+</div>
+<div class="flex items-center p-3 hover:bg-gray-50 rounded-lg transition duration-200">
+<div class="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mr-4">
+<i class="fas fa-tint text-gray-500 text-xl"></i>
+</div>
+<div>
+<h3 class="font-medium text-gray-800">Plumbing</h3>
+<p class="text-sm text-gray-500">Pipes, fittings, fixtures</p>
+</div>
+</div>
+<div class="flex items-center p-3 hover:bg-gray-50 rounded-lg transition duration-200">
+<div class="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center mr-4">
+<i class="fas fa-plug text-gray-500 text-xl"></i>
+</div>
+<div>
+<h3 class="font-medium text-gray-800">Electrical</h3>
+<p class="text-sm text-gray-500">Wires, switches, sockets</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<h3 class="text-xl font-bold mb-4">Mache Hardware Stores Ltd</h3>
+<p class="text-gray-300 mb-4">
+                        Your trusted hardware partner in Nakuru, Kenya. Quality products and exceptional service since our founding.
+                    </p>
+<div class="flex space-x-4">
+<a class="text-gray-300 hover:text-white transition duration-300" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="text-gray-300 hover:text-white transition duration-300" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="text-gray-300 hover:text-white transition duration-300" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-300 hover:text-white transition duration-300" href="#">Home</a></li>
+<li><a class="text-gray-300 hover:text-white transition duration-300" href="#">Products</a></li>
+<li><a class="text-gray-300 hover:text-white transition duration-300" href="#">Services</a></li>
+<li><a class="text-gray-300 hover:text-white transition duration-300" href="#">About Us</a></li>
+<li><a class="text-gray-300 hover:text-white transition duration-300" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+<ul class="space-y-2">
+<li class="flex items-start">
+<i class="fas fa-map-marker-alt mt-1 mr-3 text-gray-300"></i>
+<span class="text-gray-300">Geoffrey Kamau Ave, Nakuru, Kenya</span>
+</li>
+<li class="flex items-center">
+<i class="fas fa-phone-alt mr-3 text-gray-300"></i>
+<span class="text-gray-300">+254 700 483315</span>
+</li>
+<li class="flex items-center">
+<i class="fas fa-envelope mr-3 text-gray-300"></i>
+<span class="text-gray-300">info@machehardware.co.ke</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+<p>© 2023 Mache Hardware Stores Ltd. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Set current day in opening hours
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const today = new Date().getDay();
+        document.getElementById('current-day').textContent = days[today];
+        
+        // Highlight current day in opening hours details
+        document.addEventListener('DOMContentLoaded', function() {
+            const hoursDetails = document.querySelector('.hours-details');
+            if (hoursDetails) {
+                const dayItems = hoursDetails.querySelectorAll('li');
+                dayItems[today].classList.add('text-blue-600', 'font-medium');
+            }
+        });
+    </script>
+</body>
+</html>
